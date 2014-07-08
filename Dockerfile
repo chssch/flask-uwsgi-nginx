@@ -19,8 +19,8 @@ maintainer Dockerfiles
 run echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 run apt-get update
 
-run apt-get install aptitude
-run aptitude install build-essential git
+run apt-get install -y aptitude
+run aptitude install -y build-essential git
 
 run apt-get install -y python python-dev python-setuptools
 run apt-get install -y nginx supervisor
