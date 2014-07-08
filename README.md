@@ -1,7 +1,13 @@
-# Django, uWSGI and Nginx in a container
+
+Based on dockerfiles/django-uwsgi-nginx, thanks
+
+# Flask, uWSGI and Nginx in a container
+
+
+Original from dockerfiles/django-uwsgi-nginx:
 
 This Dockerfile allows you to build a Docker container with a fairly standard
-and speedy setup for Django with uWSGI and Nginx.
+and speedy setup for F with uWSGI and Nginx.
 
 uWSGI from a number of benchmarks has shown to be the fastest server 
 for python applications and allows lots of flexibility.
