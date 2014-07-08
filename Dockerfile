@@ -17,6 +17,8 @@ from ubuntu:precise
 maintainer Dockerfiles
 
 run echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+run echo "deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted" | sudo tee -a /etc/apt/sources.list.d/precise-updates.list
+
 run apt-get update
 
 run apt-get install -y aptitude
