@@ -12,13 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from ubuntu
+from ubuntu:precise
 
 maintainer Dockerfiles
 
 run echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 run apt-get update
-run apt-get install -y build-essential git
+
+sudo apt-get install aptitude
+sudo aptitude install build-essential git
+
 run apt-get install -y python python-dev python-setuptools
 run apt-get install -y nginx supervisor
 run easy_install pip
